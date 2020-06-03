@@ -1,0 +1,306 @@
+html {
+    background: rgb(236, 236, 236);
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 90%;    
+    margin: auto;
+    clear: both;
+    display: table;
+    background: white;
+}
+/* HEADER */
+.logo {
+    margin: 10px 30px;
+    width: 55px;
+    height: 55px;
+    float: left;
+}
+.img, .img img {
+    width: 100%;
+    height: 100%;
+}
+.contact, .menu, .search {
+    float: left;
+    margin-top: 15px;
+}
+.header a {
+    color: black;
+    text-decoration: none;
+}
+ul {    
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.contact a:hover {
+    color: blueviolet;
+}
+.contact li:last-child {
+    padding-top: 5px;
+}
+
+/* Header_MENU */
+.menu {
+    width: 55%;
+}
+.menu ul {
+    float: right;
+    clear: both;
+    display: table;
+}
+.menu ul li {
+    float: left;
+    margin-left: 15px;
+    padding: 10px;
+}
+.menu .border {
+    border: 2px solid green; 
+}
+.menu .button {
+    padding: 11px;
+    background: purple;
+}
+.menu .button button{
+    background: none;      
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Header_SEARCH */
+.search {
+    width: 15%;
+    float: right;
+}
+.search button {
+    background: transparent;
+    border: none;
+    font-size: 36px;
+}
+
+/* NAVBAR */
+.navbar-menu {
+    background: black;
+}
+.navbar-menu ul {
+    clear: both;
+    display: table;
+    margin-left: 10%;
+}
+.navbar-menu li {
+    display: table;
+    float: left;
+    color: white;
+    margin-left: 25px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.navbar-menu li img,span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* CONTENT */
+.gallary {    
+    clear: both;
+    display: table;
+    width: 100%;
+}
+.gallary-child {
+    position: relative;    
+    margin: 15px 0px 15px 25px;
+    border: 1px solid gray;
+    height: 400px;
+    width: 22%;   
+    float: left;    
+}
+.gallary-child:hover{
+    box-shadow: 2px 2px 10px 2px;
+    color: #cecece;     
+}
+.gallary-img {
+    height: 65%;
+    text-align: center;
+}
+.gallary-img img {
+    height: 75%;
+    width: 75%;
+    margin-top: 20%;
+}
+.text {
+    height: 25%;
+    width: 85%;
+    margin-left: 10%;
+}
+.text p {
+    font-size: 14px;
+    color: black;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.text .name {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.button {
+    height: 10%;
+}
+.button button {
+    color: white;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 100%;
+}
+.button .buy {
+    width: 79%;
+    background: black;
+}
+.shopping-cart {
+    width: 20%;
+    float: right;
+    background: purple;
+}
+.child-icon {
+    position: absolute;
+    top: 20px; 
+    width: 45px;
+}
+
+@media(max-width: 1024px) {
+    .menu ul li {
+        margin: auto;
+    }
+    .menu .green {
+        padding: 9px;
+    }
+    .menu .button button {
+        font-size: 14px;
+    }
+    .navbar-menu ul li {
+        margin-left: auto;
+    }
+    ul li span {
+        font-size: 14px;
+    }
+    .gallary-child {
+        height: 350px;
+        margin-left: 2.2%;
+    }
+}
+@media(max-width: 768px) {
+    .logo {
+        margin: auto 15%;
+    }
+    .contact {
+        margin-right: 15%;
+        float: right;
+    }
+    .menu {
+        width: 100%;    
+    }
+    .menu ul {
+        margin: auto;
+        float: none;
+    }
+    .search {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-menu ul {
+        display: table-cell;
+    }
+    .navbar-menu ul li {
+        margin-left: 5%;
+        width: 25%;    
+    }
+    .gallary-child {    
+        width: 40%;
+        margin-left: 6.5%;
+    }
+    
+@media(max-width: 425px) {
+    .logo, .contact, .menu, .menu ul,
+    .menu ul li, .search {
+        float: none;
+        margin: auto;
+    }
+    .logo, .search {
+        margin: 15px auto;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu .button button {
+        font-size: 12px;
+    }
+    .contact, .menu ul li {
+        text-align: center;
+        font-size: 12px;
+    }
+    .search {
+        width: auto;
+        text-align: center;
+    }
+    .search button {
+        font-size: 20px;
+    }
+    .navbar-menu ul {
+        display: table-cell;
+    }
+    .navbar-menu ul li {
+        margin-left: 10%;
+        width: 30%;
+    }
+    .navbar-menu ul li span {
+        font-size: 12px;
+    }
+    .gallary-child {    
+        width: 40%;
+        height: 250px;
+        margin-left: 6.5%;
+        margin-bottom: 0;
+    }
+    .text p, .gallary-child .button button {
+        font-size: 10px;
+    }
+    .child-icon img {
+        width: 75%;
+        height: 75%;
+    }
+}
+@media(max-width: 375px) {
+    .gallary-child {    
+        width: 40%;
+        height: 220px;
+        margin-left: 6.5%;
+        margin-bottom: 0;
+    }
+    .child-icon img {
+        width: 65%;
+        height: 65%;
+    }
+}
+@media(max-width: 320px) {
+    .navbar-menu ul li {
+        margin-left: 5%;
+        width: 30%;
+    }
+    .gallary-child {
+        margin: 2% 10%;
+        width: 80%;
+        height: 350px;
+    }
+    .text p, .gallary-child .button button {
+        font-size: 12px;
+    }
+    .child-icon img {
+        width: 100%;
+        height: 100%;
+    }
+}
